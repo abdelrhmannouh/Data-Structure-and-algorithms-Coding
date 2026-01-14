@@ -7,16 +7,23 @@ A comprehensive implementation of fundamental data structures and algorithms usi
 ```
 data Algorithms/
 ├── ReadMe.md                  # Project documentation
-├── linked List/
+├── linked_List/
 │   ├── DoubleLinkedList.py   # Doubly Linked List implementation
 │   ├── main.py               # Examples and usage
+│   └── __pycache__/          # Python cache files
+├── Stack/
+│   ├── stack.py              # Stack implementation
+│   ├── main.py               # Examples and usage
+│   └── __pycache__/          # Python cache files
+├── Queue/
+│   ├── queue.py              # Queue implementation
 │   └── __pycache__/          # Python cache files
 ```
 
 ## 📚 Data Structures
 
 ### Linked List
-Located in the `linked List/` directory
+Located in the `linked_List/` directory
 
 - **DoubleLinkedList.py**: Implementation of a doubly linked list data structure
   - Nodes with forward and backward pointers
@@ -30,6 +37,36 @@ Located in the `linked List/` directory
 - Search for elements
 - Display list contents
 
+### Stack
+Located in the `Stack/` directory
+
+- **stack.py**: Implementation of a stack data structure (LIFO - Last In First Out)
+  - Node-based implementation with pointer manipulation
+  - Support for push, pop, and peek operations
+  - Stack size calculation
+
+#### Key Operations:
+- Push: Add elements to the top of the stack
+- Pop: Remove and return the top element
+- Peek: View the top element without removing
+- is_empty: Check if stack is empty
+- Size: Get the current number of elements
+
+### Queue
+Located in the `Queue/` directory
+
+- **queue.py**: Implementation of a queue data structure (FIFO - First In First Out)
+  - Array-based implementation with front and rear pointers
+  - Support for enqueue, dequeue, and size operations
+  - Fixed capacity initialization
+
+#### Key Operations:
+- Enqueue: Add elements to the rear of the queue
+- Dequeue: Remove and return the front element
+- isEmpty: Check if queue is empty
+- Size: Get the current number of elements
+- Front: Get the front index of the queue
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -41,8 +78,22 @@ Located in the `linked List/` directory
 Navigate to the linked list directory and run the main file:
 
 ```bash
-cd "linked List"
+cd "linked_List"
 python main.py
+```
+
+Navigate to the stack directory and run the main file:
+
+```bash
+cd Stack
+python main.py
+```
+
+Navigate to the queue directory and run the queue file:
+
+```bash
+cd Queue
+python queue.py
 ```
 
 ## 💡 Usage Examples
@@ -72,6 +123,20 @@ dll.display()
 - **Traverse**: Navigate forward and backward through the list
 - **Display**: Print the list contents
 
+### Stack Operations
+- **Push**: Add elements to the stack
+- **Pop**: Remove and return the top element
+- **Peek**: View the top element without removing it
+- **is_empty**: Check if the stack is empty
+- **size**: Get the total number of elements
+
+### Queue Operations
+- **Enqueue**: Add elements to the queue
+- **Dequeue**: Remove and return the front element
+- **isEmpty**: Check if the queue is empty
+- **size**: Get the total number of elements
+- **front**: Get the front index of the queue
+
 ## 📝 Implementation Details
 
 All implementations follow standard Python conventions:
@@ -94,7 +159,7 @@ This project helps understand:
 Planned additions to this repository:
 - Single Linked List
 - Circular Linked List
-- Stack and Queue implementations
+- Advanced Queue implementations (Priority Queue, Circular Queue)
 - Tree data structures (Binary Tree, BST, AVL Tree)
 - Graph implementations
 - Sorting algorithms (Bubble, Quick, Merge, Heap)
